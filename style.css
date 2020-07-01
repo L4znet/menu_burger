@@ -1,0 +1,106 @@
+/*
+* Projet créé par Charly Escalona
+* Charly2221@hotmail.fr
+* www.charly-e.com
+* https://github.com/L4znet/menu_burger
+*/
+
+
+body{
+    margin:0;
+    font-family: 'Notable', sans-serif;
+}
+
+main{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    background-color:rgb(192, 185, 127);
+}
+
+article{
+    width:414px;
+    height:895px;
+    background-color:#FFF;
+    overflow: hidden;
+}
+
+button{
+    border:none;
+    width:80px;
+    height:80px;
+    background-color:transparent;
+    outline:none;
+    cursor:pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button svg{
+    fill:#FFF;
+    transform: rotate(-180deg);
+}
+
+.icon_close{
+    display:none;
+    width:80%;
+}
+
+.icon_open{
+    width:70%;
+}
+
+nav{
+    height:100%;
+    width:100%;
+    margin:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+}
+
+
+nav ul{
+    transform:rotate(180deg);
+    display:none;
+    flex-direction:column;
+    width:617px;
+    align-items: center;
+    margin:40px 0 0 0;
+    padding:0 0 0 20px;
+}
+
+nav ul li{
+    list-style:none;
+    width:100%;
+    margin:20px 0 0 20px;
+    padding:0;
+}
+
+nav ul li a{
+    color:#FFF;
+    text-decoration:none;
+    font-size:40px;
+    border-bottom:1px solid transparent;
+}
+
+
+.open{
+    width:617px;
+    height:617px;
+    background-color:rgb(147, 178, 199);
+    transform:rotate(-156deg);
+    transition:all 0.3s;
+}
+
+.close{
+    width:80px;
+    height:80px;
+    background-color:rgb(199, 194, 147);
+    transform:rotate(0deg);
+    transition:all 0.3s;
+}
